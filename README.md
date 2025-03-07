@@ -12,7 +12,7 @@ hints of teal.
 <!-- prettier-ignore-start -->
 
 > [!WARNING]
-> All [extras](#extras) have been moved to [ashen-org/ashen](https://github.com/ashen-org/ashen).
+> All [extras](#extras) have been moved to [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
 > They will eventually be removed from this repository.
 
 <!-- prettier-ignore-end -->
@@ -49,7 +49,7 @@ Using [lazy.nvim](https://lazy.folke.io/):
 
 ```lua
 {
-  "ashen-org/ashen.nvim",
+  "ficcdaf/ashen.nvim",
   -- optional but recommended,
   -- pin to the latest stable release:
   tag = "*",
@@ -621,7 +621,7 @@ opts = {
 
 ## Extras
 
-Ashen is available for many other programs. Most Ashen ports can be found in the main repository, [ashen-org/ashen](https://github.com/ashen-org/ashen).
+Ashen is available for many other programs. Most Ashen ports can be found in the main repository, [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
 Below, you can find **_some_, but not all** of them.
 
 <!-- prettier-ignore-start -->
@@ -634,33 +634,33 @@ Below, you can find **_some_, but not all** of them.
 
 ### Text Editors
 
-- [Helix](https://github.com/ashen-org/ashen/tree/main/helix)
+- [Helix](https://github.com/ficcdaf/ashen/tree/main/helix)
 
 ### Terminal Emulators
 
-- [Ghostty](https://github.com/ashen-org/ashen/tree/main/ghostty)
-- [Kitty](https://github.com/ashen-org/ashen/tree/main/kitty)
-- [Alacritty](https://github.com/ashen-org/ashen/tree/main/alacritty)
-- [Windows Terminal](https://github.com/ashen-org/ashen/tree/main/windows-terminal)
-- [WezTerm](https://github.com/ashen-org/ashen/tree/main/wezterm)
-- [foot](https://github.com/ashen-org/ashen/tree/main/foot)
+- [Ghostty](https://github.com/ficcdaf/ashen/tree/main/ghostty)
+- [Kitty](https://github.com/ficcdaf/ashen/tree/main/kitty)
+- [Alacritty](https://github.com/ficcdaf/ashen/tree/main/alacritty)
+- [Windows Terminal](https://github.com/ficcdaf/ashen/tree/main/windows-terminal)
+- [WezTerm](https://github.com/ficcdaf/ashen/tree/main/wezterm)
+- [foot](https://github.com/ficcdaf/ashen/tree/main/foot)
 
 ### CLI
 
-- [bat](https://github.com/ashen-org/ashen/tree/main/bat)
-- [eza](https://github.com/ashen-org/ashen/tree/main/eza)
-- [lazygit](https://github.com/ashen-org/ashen/tree/main/lazygit)
-- [yazi](https://github.com/ashen-org/ashen/tree/main/yazi)
-- [fzf](https://github.com/ashen-org/ashen/tree/main/fzf)
+- [bat](https://github.com/ficcdaf/ashen/tree/main/bat)
+- [eza](https://github.com/ficcdaf/ashen/tree/main/eza)
+- [lazygit](https://github.com/ficcdaf/ashen/tree/main/lazygit)
+- [yazi](https://github.com/ficcdaf/ashen/tree/main/yazi)
+- [fzf](https://github.com/ficcdaf/ashen/tree/main/fzf)
 
 ### Environment
 
-- [waybar](https://github.com/ashen-org/ashen/tree/main/waybar)
-- [sway](https://github.com/ashen-org/ashen/tree/main/sway)
+- [waybar](https://github.com/ficcdaf/ashen/tree/main/waybar)
+- [sway](https://github.com/ficcdaf/ashen/tree/main/sway)
 
 ### Web
 
-- [Firefox](https://github.com/ashen-org/ashen/tree/main/firefox)
+- [Firefox](https://github.com/ficcdaf/ashen/tree/main/firefox)
 
 ## Acknowledgements
 
