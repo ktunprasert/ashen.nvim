@@ -12,8 +12,8 @@ hints of teal.
 <!-- prettier-ignore-start -->
 
 > [!WARNING]
-> All [extras](#extras) have been moved to [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
-> They will eventually be removed from this repository.
+> All [extras](#extras) have been moved to
+> [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
 
 <!-- prettier-ignore-end -->
 
@@ -128,8 +128,8 @@ see [Plugin Configuration](#plugin-configuration) for more details.
 <!-- prettier-ignore-start -->
 
 > [!WARNING]
-> If you choose to set any options, please note that `setup` _only_
-> sets up the configuration and does **not** load the theme! You must call
+> If you choose to set any options, please note that `setup` _only_ sets up the
+> configuration and does **not** load the theme! You must call
 > `colorscheme ashen` or `require("ashen").load()` _after_ `setup`!
 
 <!-- prettier-ignore-end -->
@@ -152,8 +152,8 @@ options are provided.
 <!-- prettier-ignore-start -->
 
 > [!TIP]
-> If you are not changing any of the defaults, avoid calling `setup` or
-> setting any `opts` -- your startup time will be faster!
+> If you are not changing any of the defaults, avoid calling `setup` or setting
+> any `opts` -- your startup time will be faster!
 
 <!-- prettier-ignore-end -->
 
@@ -275,8 +275,8 @@ opts = {
 <!-- prettier-ignore-start -->
 
 > [!TIP]
-> Made a palette you're proud of? It could become Ashen's next "theme
-> variant" -- don't be afraid to open a feature request for it!
+> Made a palette you're proud of? It could become Ashen's next "theme variant"
+> -- don't be afraid to open a feature request for it!
 
 <!-- prettier-ignore-end -->
 
@@ -621,46 +621,8 @@ opts = {
 
 ## Extras
 
-Ashen is available for many other programs. Most Ashen ports can be found in the main repository, [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
-Below, you can find **_some_, but not all** of them.
-
-<!-- prettier-ignore-start -->
-
-> [!TIP]
-> Missing an extra? Open an issue and request it, or try porting it
-> yourself!
-
-<!-- prettier-ignore-end -->
-
-### Text Editors
-
-- [Helix](https://github.com/ficcdaf/ashen/tree/main/helix)
-
-### Terminal Emulators
-
-- [Ghostty](https://github.com/ficcdaf/ashen/tree/main/ghostty)
-- [Kitty](https://github.com/ficcdaf/ashen/tree/main/kitty)
-- [Alacritty](https://github.com/ficcdaf/ashen/tree/main/alacritty)
-- [Windows Terminal](https://github.com/ficcdaf/ashen/tree/main/windows-terminal)
-- [WezTerm](https://github.com/ficcdaf/ashen/tree/main/wezterm)
-- [foot](https://github.com/ficcdaf/ashen/tree/main/foot)
-
-### CLI
-
-- [bat](https://github.com/ficcdaf/ashen/tree/main/bat)
-- [eza](https://github.com/ficcdaf/ashen/tree/main/eza)
-- [lazygit](https://github.com/ficcdaf/ashen/tree/main/lazygit)
-- [yazi](https://github.com/ficcdaf/ashen/tree/main/yazi)
-- [fzf](https://github.com/ficcdaf/ashen/tree/main/fzf)
-
-### Environment
-
-- [waybar](https://github.com/ficcdaf/ashen/tree/main/waybar)
-- [sway](https://github.com/ficcdaf/ashen/tree/main/sway)
-
-### Web
-
-- [Firefox](https://github.com/ficcdaf/ashen/tree/main/firefox)
+Ashen is available for many other programs. You can find them in the main
+repository, [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
 
 ## Acknowledgements
 
