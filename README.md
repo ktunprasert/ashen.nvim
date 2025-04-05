@@ -9,11 +9,15 @@ hints of teal.
 
 ![Lua, Python, and Go code in the Ashen theme.](assets/preview.png "Lua, Python, and Go code in the Ashen theme.")
 
+Please check the main repository at
+[sr.ht/~ficd/ashen](https://sr.ht/~ficd/ashen) for implementations of Ashen for
+other software.
+
 <!-- prettier-ignore-start -->
 
 > [!WARNING]
-> All [extras](#extras) have been moved to
-> [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
+> This project is in maintenance mode because I no longer use Neovim. I still
+> accept contributions.
 
 <!-- prettier-ignore-end -->
 
@@ -21,15 +25,29 @@ hints of teal.
 
 <!--toc:start-->
 
-- [Features](#features)
-- [Installation](#installation)
-- [Plugins](#plugins)
-- [Configuration](#configuration)
-- [Plugin Configuration](#plugin-configuration)
-- [Extras](#extras)
-- [Acknowledgements](#acknowledgements)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
+- [Ashen](#ashen)
+  - [Contents](#contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Plugins](#plugins)
+  - [Configuration](#configuration)
+    - [Style](#style)
+    - [Style Presets](#style-presets)
+    - [Palette Override](#palette-override)
+    - [Highlight Override](#highlight-override)
+    - [Terminal Palette](#terminal-palette)
+    - [Plugin Integration Settings](#plugin-integration-settings)
+      - [Autoload](#autoload)
+      - [Manual Loading](#manual-loading)
+      - [Override](#override)
+  - [Plugin Configuration](#plugin-configuration)
+    - [FzfLua](#fzflua)
+    - [Lualine](#lualine)
+    - [Trailblazer.nvim](#trailblazernvim)
+    - [Render-markdown.nvim](#render-markdownnvim)
+  - [Extras](#extras)
+  - [Acknowledgements](#acknowledgements)
+  - [Contributing](#contributing)
 
 <!--toc:end-->
 
@@ -622,29 +640,14 @@ opts = {
 ## Extras
 
 Ashen is available for many other programs. You can find them in the main
-repository, [ficcdaf/ashen](https://github.com/ficcdaf/ashen).
+repository, [sr.ht/~ficd/ashen](https://sr.ht/~ficd/ashen).
 
 ## Acknowledgements
 
 Ashen was inspired by
 [nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy).
 
-## Roadmap
-
-Theme variants and massive performance overhauls are in the works.
-
-Please refer to the [issues](https://github.com/ficcdaf/ashen.nvim/issues) page
-for a detailed roadmap.
-
 ## Contributing
 
-If you want a certain plugin or extra to be added, please open an issue and I'll
-get to it as soon as I can. If you want to contribute, please read the
-[contribution guidelines](/CONTRIBUTING.md).
-
-## Support My Work
-
-I'm a busy & broke graduate student doing my best to develop and maintain this
-plugin. If you feel that Ashen has added value to your Neovim experience, you
-may consider [buying me a coffee](https://ko-fi.com/ficcdaf). Your support is
-greatly appreciated but never expected. Thanks!
+This project is in maintenance mode because I don't use Neovim anymore. If you
+want to contribute, please read the [contribution guidelines](/CONTRIBUTING.md).
