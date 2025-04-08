@@ -9,17 +9,15 @@ hints of teal.
 
 ![Lua, Python, and Go code in the Ashen theme.](assets/preview.png "Lua, Python, and Go code in the Ashen theme.")
 
-Please check the main repository at
-[sr.ht/~ficd/ashen](https://sr.ht/~ficd/ashen) for implementations of Ashen for
-other software.
+This repository only contains the implementation of Ashen for Neovim. It's
+hosted on [sr.ht](https://git.sr.ht/~ficd/ashen.nvim) and mirrored on
+[GitHub](https://github.com/ficcdaf/ashen.nvim) for your convenience. Please
+check the main monorepo at [sr.ht/~ficd/ashen](https://sr.ht/~ficd/ashen) for
+implementations of Ashen for other software.
 
-<!-- prettier-ignore-start -->
-
-> [!WARNING]
-> This project is in maintenance mode because I no longer use Neovim. I still
-> accept contributions.
-
-<!-- prettier-ignore-end -->
+> **Note**: This project is in maintenance mode because I no longer use Neovim.
+> If you want to contribute, please consult the [contributing](#contributing)
+> section.
 
 ## Contents
 
@@ -107,7 +105,7 @@ return {
 
 You can also configure `lazy.nvim` to use Ashen while installing plugins:
 
-```Lua
+```lua
 require("lazy").setup({
   install = {
     colorscheme = {"ashen"}
@@ -156,7 +154,7 @@ You can pass an options table to the `setup` function to configure Ashen, the
 same you would any other plugin. If you use `lazy.nvim`, you can set options as
 shown in [installation](#installation)!
 
-```Lua
+```lua
 require("ashen").setup({
   -- your settings here
 })
@@ -181,7 +179,7 @@ provided settings will be merged with the defaults.
 <details>
   <summary>Available Settings</summary>
 
-```Lua
+```lua
 -- default settings
 {
   -- toggle text style options
@@ -242,7 +240,7 @@ provided settings will be merged with the defaults.
 
 You can disable _all_ uses of a certain style with the following setting:
 
-```Lua
+```lua
 opts = {
   style = {
     bold = false,
@@ -257,7 +255,7 @@ opts = {
 The following presets are available. They are off by default, and you may choose
 to enable them in your configuration:
 
-```Lua
+```lua
 opts = {
   style_presets = {
     bold_functions = true,
@@ -279,7 +277,7 @@ names, please see [colors.lua](./lua/ashen/colors.lua).
 
 Please see the following example:
 
-```Lua
+```lua
 opts = {
   colors = {
     background = "#000000",
@@ -308,7 +306,7 @@ You can find a detailed explanation of the HighlightMap type below.
 <details>
 <summary>Explanation of HighlightMap type</summary>
 
-```Lua
+```lua
 ---@alias HighlightSpec [FgHexCode?, BgHexCode?, Style?]
 -- The colors *must* be in this ^^^ order. If you want
 -- to set a background but no foreground, you MUST pass
@@ -361,7 +359,7 @@ in which the key is the link's _origin_ and the value is its _target_.
 Note that both **hexadecimal color codes** and **Ashen color names** are valid
 inputs for color parameters.
 
-```Lua
+```lua
 -- full example
 hl = {
   -- overwrite every field
@@ -441,13 +439,13 @@ The `terminal.colors` field of the `opts` table should be a mapping of Xterm
 indexes to hexadecimal color codes. Please note that the indexes are a C-style
 zero indexed array and _not_ a Lua array - the count starts from `0`, not `1`!
 
-```Lua
+```lua
 ---@alias AnsiMap table<integer, HexCode> -- where integer ∈ [0, 15]
 ```
 
 Please see the following example:
 
-```Lua
+```lua
 terminal = {
   colors = {
     -- override black
@@ -467,7 +465,7 @@ terminal = {
 
 Plugin integration settings can be set under the `opts.plugins` table:
 
-```Lua
+```lua
 {
   plugins = {
     autoload = true,
@@ -495,7 +493,7 @@ You can manually load any plugin integration on-demand in your Neovim config by
 using the `load_plugin` function. The same naming rules apply as for
 `plugins.override`, please see below for more details.
 
-```Lua
+```lua
 -- example
 require("ashen.plugins").load_plugin("flash")
 ```
@@ -508,7 +506,7 @@ extension removed, and exclude `init.lua`.
 
 For example:
 
-```Lua
+```lua
 {
   -- flash.nvim
   "flash",
@@ -534,7 +532,7 @@ loaded automatically.
 If FzfLua's colors aren't looking quite right, please make sure that you have
 disabled `fzf_colors` in the settings:
 
-```Lua
+```lua
 {
   "ibhagwan/fzf-lua",
   opts = {
@@ -645,9 +643,13 @@ repository, [sr.ht/~ficd/ashen](https://sr.ht/~ficd/ashen).
 ## Acknowledgements
 
 Ashen was inspired by
-[nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy).
+[nvim-noirbuddy](https://github.com/jesseleite/nvim-noirbuddy) and Dark Souls 3.
 
 ## Contributing
 
-This project is in maintenance mode because I don't use Neovim anymore. If you
-want to contribute, please read the [contribution guidelines](/CONTRIBUTING.md).
+This project is in maintenance mode because I don't use Neovim anymore. I do,
+however, accept contributions. You can open a ticket on the
+[ticket tracker](https://todo.sr.ht/~ficd/ashen) or send patches and inquiries
+to the [mailing list](https://lists.sr.ht/~ficd/ashen). Consult the
+[sr.ht manual](https://man.sr.ht/git.sr.ht/#sending-patches-upstream) for
+guidance on how to contribute via email.
