@@ -14,11 +14,6 @@ M.load = function()
       vim.api.nvim_create_autocmd("TextYankPost", {
         group = augroup("highlight_yank"),
         callback = function()
-          -- vim.notify(tostring(main.lazyvim) .. "in callback", vim.log.levels.DEBUG)
-          if main.lazyvim and not M.lazy_cleared then
-            vim.api.nvim_del_augroup_by_name("lazyvim_highlight_yank")
-            M.lazy_cleared = true
-          end
           (vim.hl or vim.highlight).on_yank(opt)
         end,
       })

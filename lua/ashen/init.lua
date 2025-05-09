@@ -3,7 +3,6 @@ local M = {}
 -- highlight on yank needs to be set
 -- differently using lazyvim so we
 -- have to track whether the user is running it
-M.lazyvim = false
 
 -- Merge user options with defaults
 M.setup = function(opts)
@@ -29,10 +28,6 @@ end
 M.load = function()
   local state = require("ashen.state")
   local opts = state.opts
-  -- this is kinda cringe since it requires
-  -- lazyvim to be loaded before ashen, but
-  -- I can't think of a better way to do this :/
-  M.lazyvim = pcall(require, "lazyvim")
 
   if vim.g.colors_name or opts.force_hi_clear then
     vim.cmd("hi clear")
